@@ -1,0 +1,12 @@
+
+
+/*Buttons*/
+
+.btn-block {
+    display: inline;
+}
+
+.btn-danger {
+    background-color: #F55433;
+    border-color: #f5f5f5;
+}
