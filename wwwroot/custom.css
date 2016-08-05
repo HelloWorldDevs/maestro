@@ -151,3 +151,22 @@
 #section-team .row img {
     min-height: 500px;
 }
+
+/*specials*/
+
+#section-specials {
+    background-image: url('images/specials-parallax.jpg');
+}
+
+#section-specials .heading h2,
+#section-specials .heading h3,
+#section-specials .row h1,
+#section-specials .row h4 {
+    color: white;
+}
+
+
+#section-specials .row h6,
+#section-specials .row p {
+    color: white;
+}
