@@ -348,6 +348,21 @@ body {
 
 /*Forms*/
 
+#section-forms  {
+    background-image: url('images/forms-parallax.jpg');
+    padding: 40px 0px 60px 0px;
+}
+
+#section-forms .forms-btn-row {
+    padding: 60px 0px;
+}
+
+#section-forms .forms-heading {
+    font-family: 'Georgia';
+    font-size: 40px;
+    color: #FFFFFF;
+    letter-spacing: -0.56px;
+}
 #section-forms .row>div {
     text-align: center;
 }
@@ -365,6 +380,11 @@ body {
     background-image: url('images/map.png');
     min-height: 500px;
     background-size: cover;
+}
+
+#section-location {
+    padding: 30px 40px;
+    background: #FFFFFF;
 }
 
 /*Marquee*/
@@ -390,12 +410,23 @@ body {
     max-width: 850px;
 }
 
+/*TODO Was trying to get the last slide to have the right text*/
+/*#slider .slider-caption.slider-caption-center.last-slider .headline h1 {*/
+    /*max-width: 100%;*/
+    /*font-family: 'Georgia';*/
+    /*font-size: 54px;*/
+    /*color: #F3F6F9;*/
+    /*letter-spacing: 0px;*/
+    /*line-height: 60px;*/
+    /*text-shadow: 2px 2px 4px rgba(0,0,0,0.80);*/
+/*}*/
+
 #content .heading-one h2 {
     font-family: 'Georgia';
     font-size: 40px;
     color: #813107;
     letter-spacing: -0.56px;
-     font-weight: 400;
+    font-weight: 400;
 }
 
 .testimonial .flex-control-nav li a {
@@ -406,6 +437,13 @@ body {
     width: 10px !important;
     height: 10px !important;
 }
+
+.review-stars .custom-icon {
+    text-shadow: 2px 2px 4px 0px rgba(0,0,0,0.73);
+    color: gold;
+}
+
+
 
 /*services*/
 
