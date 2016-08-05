@@ -141,3 +141,13 @@
 #section-phone-2 {
     padding: 30px;
 }
+
+/*Team*/
+
+#section-team {
+    background-color: #EEEFE5;
+}
+
+#section-team .row img {
+    min-height: 500px;
+}
