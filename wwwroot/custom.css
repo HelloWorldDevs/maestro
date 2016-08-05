@@ -1,4 +1,6 @@
-
+.content-wrap {
+    padding: 0px 0px 80px 0px;
+}
 
 /*Buttons*/
 
@@ -11,7 +13,8 @@
     border-color: #f5f5f5;
 }
 
-/*Header*/
+/*Header (nav bar)*/
+
 
 
 /*Phone*/
