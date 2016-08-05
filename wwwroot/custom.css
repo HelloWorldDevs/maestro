@@ -173,4 +173,43 @@
 
 /*Reviews*/
 
-#sec
+/*Insurance*/
+
+#section-insurance {
+    background-image: url('images/membership-parallax.jpg');
+}
+
+#section-insurance a {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 15px 40px;
+}
+
+#section-insurance h1,
+#section-insurance h4,
+#section-insurance h5,
+#section-insurance a {
+    color: white;
+}
+
+#section-insurance h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+#section-insurance h4:nth-child(3) {
+    text-transform: uppercase;
+}
+
+#section-insurance h5 {
+    margin-bottom: 7px;
+}
+
+#section-insurance h5:nth-last-child(2) {
+    margin-bottom: 60px;
+}
+
+#section-insurance .row {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
