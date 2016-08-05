@@ -213,3 +213,17 @@
     padding-top: 75px;
     padding-bottom: 75px;
 }
+
+/*Forms*/
+
+#section-forms .row>div {
+    text-align: center;
+}
+
+/*Contact*/
+
+#section-location__map {
+    background-image: url('images/map.png');
+    min-height: 500px;
+    background-size: cover;
+}
