@@ -1,6 +1,6 @@
-/*body {*/
-    /*font-family: 'Roboto Condensed';*/
-/*}*/
+body {
+    font-family: 'Roboto Condensed';
+}
 
 .content-wrap {
     padding: 0px 0px 80px 0px;
@@ -10,9 +10,12 @@
 
 .btn {
     padding: 12px 30px;
-    font-weight: 500;
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
+    background: #D56724;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    font-family: 'Roboto Condensed';
+    font-size: 18px;
+    color: #FFFFFF;
 }
 
 .btn-block {
@@ -98,18 +101,28 @@
     background-color: #778473;
 }
 
-#section-phone h2,
-#section-phone-2 h2 {
-    line-height: 1.0;
-    font-weight: 400;
-}
-
 #section-phone>div>div:last-child {
     margin-top: 20px;
 }
 
-.phone-number {
-    font-family: 'Lato';
+#section-phone .phone-number,
+#section-phone-2 .phone-number {
+    font-size: 36px;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 1.0;
+}
+
+#section-phone .phone-number__subtitle,
+#section-phone-2 .phone-number__subtitle {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+#section-phone .section-phone__additional-info {
+    font-family: RobotoCondensed-Regular;
+    font-size: 21px;
+    color: #FFFFFF;
 }
 
 .section-phone__left {
@@ -130,7 +143,7 @@
 }
 
 .section-phone__right {
-    margin-top: 15px;
+    margin-top: 25px;
     text-align: left;
 }
 
@@ -141,6 +154,7 @@
 #section-phone-2 {
     padding: 30px;
 }
+
 
 /*Team*/
 
@@ -226,4 +240,35 @@
     background-image: url('images/map.png');
     min-height: 500px;
     background-size: cover;
+}
+
+/*Marquee*/
+
+.swiper-container .headline {
+    font-family: 'Great Vibes';
+    font-size: 90px;
+    color: #F3F6F9;
+    letter-spacing: 0px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.80);
+    font-weight: 400;
+}
+
+.swiper-container .headline-subtitle {
+    font-family: 'Roboto Condensed';
+    font-size: 40px;
+    color: #F3F6F9;
+    letter-spacing: -0.42px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.80);
+}
+
+.slider-caption.slider-caption-center {
+    max-width: 850px;
+}
+
+#content .heading-one h2 {
+    font-family: 'Georgia';
+    font-size: 40px;
+    color: #813107;
+    letter-spacing: -0.56px;
+     font-weight: 400;
 }
