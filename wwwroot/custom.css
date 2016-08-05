@@ -125,10 +125,6 @@ body {
     color: #FFFFFF;
 }
 
-.section-phone__left {
-    text-align: right;
-}
-
 .section-phone__left h5,
 .section-phone__left h2 {
     margin-bottom: 0px;
@@ -144,7 +140,6 @@ body {
 
 .section-phone__right {
     margin-top: 25px;
-    text-align: left;
 }
 
 .section-phone__right a {
@@ -153,6 +148,15 @@ body {
 
 #section-phone-2 {
     padding: 30px;
+}
+
+@media (min-width: 992px) {
+    .section-phone__right {
+        text-align: left;
+    }
+    .section-phone__left {
+        text-align: right;
+    }
 }
 
 
