@@ -1,25 +1,101 @@
+/*body {*/
+    /*font-family: 'Roboto Condensed';*/
+/*}*/
 
+.content-wrap {
+    padding: 0px 0px 80px 0px;
+}
 
 /*Buttons*/
+
+.btn {
+    padding: 12px 30px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
 
 .btn-block {
     display: inline;
 }
 
 .btn-danger {
-    background-color: #F55433;
+    background-color: #d3672f;
     border-color: #f5f5f5;
+    text-transform: uppercase;
 }
 
-/*Header*/
+.btn-inverted {
+    background-color: #EEEFE5;
+    border-color: #a52a2a;
+    color: #a52a2a;
+}
 
+/*Header (nav bar)*/
+
+#header {
+    height: 130px;
+}
+#primary-menu ul li>a {
+    padding-top: 55px;
+    padding-bottom: 35px;
+}
+#primary-menu ul li:nth-child(1)>a {
+    color: #d3672f;
+}
+
+#primary-menu ul li:nth-child(2)>a {
+    color: #a52a2a;
+}
+
+#primary-menu ul li:nth-child(3)>a {
+    color: #778473;
+}
+
+#header.full-header #logo {
+    margin-right: 0px;
+}
+#logo {
+    padding: 10px 20px;
+}
+
+@media (max-width: 991px) {
+    #logo {
+        padding: 10px !important;
+        height: auto;
+
+    }
+    #primary-menu-trigger {
+        top:40px;
+    }
+}
+#header.sticky-header:not(.static-sticky) #primary-menu > ul > li > a {
+    padding-top: 28px;
+    padding-bottom: 19px;
+}
+#header.sticky-header:not(.static-sticky), #header.sticky-header:not(.static-sticky) #header-wrap {
+    height: 80px;
+}
+#header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
+    height: 60px;
+}
+
+#header.full-header #primary-menu > ul {
+     border-right: none;
+}
+
+#header.full-header #logo {
+     border-right: none;
+}
 
 /*Phone*/
 
-#section-phone {
+#section-phone,
+#section-phone-2 {
     margin-bottom: 0px;
     padding: 20px 0px;
     text-align: center;
+    background-color: #778473;
 }
 
 #section-phone h2,
@@ -64,4 +140,90 @@
 
 #section-phone-2 {
     padding: 30px;
+}
+
+/*Team*/
+
+#section-team {
+    background-color: #EEEFE5;
+}
+
+#section-team .row img {
+    min-height: 500px;
+}
+
+/*specials*/
+
+#section-specials {
+    background-image: url('images/specials-parallax.jpg');
+}
+
+#section-specials .heading h2,
+#section-specials .heading h3,
+#section-specials .row h1,
+#section-specials .row h4 {
+    color: white;
+}
+
+
+#section-specials .row h6,
+#section-specials .row p {
+    color: white;
+}
+
+/*Reviews*/
+
+/*Insurance*/
+
+#section-insurance {
+    background-image: url('images/membership-parallax.jpg');
+}
+
+#section-insurance a {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 15px 40px;
+}
+
+#section-insurance h1,
+#section-insurance h4,
+#section-insurance h5,
+#section-insurance a {
+    color: white;
+}
+
+#section-insurance h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+#section-insurance h4:nth-child(3) {
+    text-transform: uppercase;
+}
+
+#section-insurance h5 {
+    margin-bottom: 7px;
+}
+
+#section-insurance h5:nth-last-child(2) {
+    margin-bottom: 60px;
+}
+
+#section-insurance .row {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/*Forms*/
+
+#section-forms .row>div {
+    text-align: center;
+}
+
+/*Contact*/
+
+#section-location__map {
+    background-image: url('images/map.png');
+    min-height: 500px;
+    background-size: cover;
 }
