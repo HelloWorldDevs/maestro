@@ -260,13 +260,7 @@ body {
 
 #section-reviews {
     background: #DEDECD;
-
-    /* Oval 2 Copy: */
-    background: #EEEFE5;
-    border: 1px solid #BDCBB6;
-    /* Oval 2 Copy 2: */
-    background: #EEEFE5;
-    border: 1px solid #BDCBB6;
+    padding-top: 40px;
 }
 
 #section-reviews__content {
@@ -338,6 +332,7 @@ body {
     margin-bottom: 25px;
     line-height: 1.0;
     font-weight: 400;
+    margin-top: 9px;
 }
 
 #section-insurance .heading-two h5 {
@@ -410,4 +405,11 @@ body {
 .testimonial .flex-control-nav li a {
     width: 10px !important;
     height: 10px !important;
+}
+
+/*services*/
+
+#services {
+    background: #EEEFE5;
+    padding: 40px 0px;
 }
