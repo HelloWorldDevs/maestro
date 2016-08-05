@@ -1,28 +1,101 @@
+/*body {*/
+    /*font-family: 'Roboto Condensed';*/
+/*}*/
+
 .content-wrap {
     padding: 0px 0px 80px 0px;
 }
 
 /*Buttons*/
 
+.btn {
+    padding: 12px 30px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
 .btn-block {
     display: inline;
 }
 
 .btn-danger {
-    background-color: #F55433;
+    background-color: #d3672f;
     border-color: #f5f5f5;
+    text-transform: uppercase;
+}
+
+.btn-inverted {
+    background-color: #EEEFE5;
+    border-color: #a52a2a;
+    color: #a52a2a;
 }
 
 /*Header (nav bar)*/
 
+#header {
+    height: 130px;
+}
+#primary-menu ul li>a {
+    padding-top: 55px;
+    padding-bottom: 35px;
+}
+#primary-menu ul li:nth-child(1)>a {
+    color: #d3672f;
+}
 
+#primary-menu ul li:nth-child(2)>a {
+    color: #a52a2a;
+}
+
+#primary-menu ul li:nth-child(3)>a {
+    color: #778473;
+}
+
+#header.full-header #logo {
+    margin-right: 0px;
+}
+#logo {
+    padding: 10px 20px;
+}
+
+@media (max-width: 991px) {
+    #logo {
+        padding: 10px !important;
+        height: auto;
+
+    }
+    #primary-menu-trigger {
+        top:40px;
+    }
+}
+#header.sticky-header:not(.static-sticky) #primary-menu > ul > li > a {
+    padding-top: 28px;
+    padding-bottom: 19px;
+}
+#header.sticky-header:not(.static-sticky), #header.sticky-header:not(.static-sticky) #header-wrap {
+    height: 80px;
+}
+#header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
+    height: 60px;
+}
+
+#header.full-header #primary-menu > ul {
+     border-right: none;
+}
+
+#header.full-header #logo {
+     border-right: none;
+}
 
 /*Phone*/
 
-#section-phone {
+#section-phone,
+#section-phone-2 {
     margin-bottom: 0px;
     padding: 20px 0px;
     text-align: center;
+    background-color: #778473;
 }
 
 #section-phone h2,
