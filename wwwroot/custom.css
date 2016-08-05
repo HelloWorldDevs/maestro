@@ -160,10 +160,58 @@ body {
 
 #section-team {
     background-color: #EEEFE5;
+    padding: 25px 20px 0px 20px;
 }
 
 #section-team .row img {
-    min-height: 500px;
+    /*min-height: 500px;*/
+}
+
+#section-team .section-team__main_name {
+    font-size: 24px;
+    color: #778472;
+    letter-spacing: -0.34px;
+}
+
+#section-team .maestro-bio {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.4;
+    font-weight: 200;
+}
+
+#section-team .maestro-bio-wrapper {
+    padding: 10px 45px 10px 25px;
+}
+
+#section-team .section-team__team-tiles {
+    text-align: center;
+    margin: 40px 4%;
+}
+
+#section-team .section-team__team-tile {
+    margin-bottom: 25px;
+}
+
+
+#section-team .team-member-name {
+    font-size: 24px;
+    color: #778472;
+    letter-spacing: -0.34px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+#section-team .team-member-title {
+    line-height: 1.2;
+}
+
+#section-team .team-member-more {
+    font-size: 14px;
+    color: #D56724;
+    letter-spacing: -0.34px;
+    text-decoration: underline;
+    margin-bottom: 25px;
 }
 
 /*specials*/
@@ -244,7 +292,7 @@ body {
 
 /*Marquee*/
 
-.swiper-container .headline {
+#slider .swiper-container .headline {
     font-family: 'Great Vibes';
     font-size: 90px;
     color: #F3F6F9;
@@ -253,7 +301,7 @@ body {
     font-weight: 400;
 }
 
-.swiper-container .headline-subtitle {
+#slider .swiper-container .headline-subtitle {
     font-family: 'Roboto Condensed';
     font-size: 40px;
     color: #F3F6F9;
@@ -261,7 +309,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.80);
 }
 
-.slider-caption.slider-caption-center {
+#slider .slider-caption.slider-caption-center {
     max-width: 850px;
 }
 
