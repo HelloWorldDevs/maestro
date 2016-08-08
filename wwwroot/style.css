@@ -11827,8 +11827,8 @@ button.toast-close-button {
 
 #footer {
 	position: relative;
-	background-color: #EEE;
-	border-top: 5px solid rgba(0,0,0,0.2);
+	background-color: #778472;
+	border-top: none;
 }
 
 .device-lg.sticky-footer #top-bar,
@@ -11888,7 +11888,6 @@ button.toast-close-button {
 
 #copyrights {
 	padding: 40px 0;
-	background-color: #DDD;
 	font-size: 14px;
 	line-height: 1.8;
 }
