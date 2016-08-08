@@ -1,6 +1,5 @@
 (function($) {
   $(document).ready(function(){
-    console.log("GOT HERE");
     $('.fslider.customjs').flexslider({
       selector: ".slider-wrap > .slide",
       animation: 'slide',
@@ -24,6 +23,10 @@
       },
       after: function () {
       }
+    });
+    $('.ui-accordion-header').click(function () {
+      $(this).parent().find('.ui-accordion-content').addClass('folded');
+      $(this).next().removeClass('folded');
     });
   });
 })(jQuery);
