@@ -747,3 +747,14 @@ max-height: 0px;
     width: 100%;
   }
 }
+
+a.fb-link {
+  position: absolute;
+  right: 100px;
+  background: #3b5998;
+  display: block;
+  width: 25px;
+  color: white;
+  height: 25px;
+  bottom: 40px;
+}
