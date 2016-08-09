@@ -235,7 +235,12 @@ h2.review-stars {
   text-align: center;
   background-color: #778473;
 }
-
+.phone-number a {
+  color: white;
+}
+.phone a {
+  color:white;
+}
 #section-phone > div > div:last-child {
   /* margin-top: 20px; */
 }
@@ -733,5 +738,13 @@ max-height: 0px;
 
   #section-location__map {
     margin-top: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  .section-team__team-tile {
+    width: 100%;
   }
 }
