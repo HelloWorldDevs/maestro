@@ -235,10 +235,9 @@ h2.review-stars {
   text-align: center;
   background-color: #778473;
 }
-.phone-number a {
-  color: white;
-}
-.phone a {
+.phone-number a,
+.phone a,
+.section-phone__additional-info a {
   color:white;
 }
 #section-phone > div > div:last-child {
