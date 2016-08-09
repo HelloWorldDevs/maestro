@@ -26,15 +26,18 @@
           slider.removeClass('preloader2');
         }
       });
-      $('.ui-accordion-header').click(function () {
-        $(this).parent().find('.ui-accordion-content').addClass('folded');
-        $(this).next().removeClass('folded');
-      });
     };
 
     HelloWorldDevs.prototype.noOrphans = function (selectors) {
       $(selectors).each(function () {
         $(this).html($(this).html().replace(/\s([^\s<]{0,10})\s*$/, '&nbsp;$1'));
+      });
+    };
+
+    HelloWorldDevs.prototype.accordion = function (target,content) {
+      $(target).click(function () {
+        $(this).parent().find(content).addClass('folded');
+        $(this).next().removeClass('folded');
       });
     };
 
@@ -53,11 +56,23 @@
       });
     };
 
+
+    HelloWorldDevs.prototype.mailForm = function (form) {
+      $(form).submit(function(e) {
+        console.log(e.target);
+        e.preventDefault();
+
+      });
+    };
+
     var HWD = new HelloWorldDevs();
     $(document).ready(function () {
       HWD.noOrphans('h1,h2,h3,h4,h5,h6,li,p');
       HWD.smootherScroll();
+      HWD.accordion('.ui-accordion-header','.ui-accordion-content');
     });
+
+
 
   });
 })(jQuery);
