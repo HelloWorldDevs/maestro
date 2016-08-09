@@ -145,7 +145,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #1ABC9C;
+	color: #813107;
 }
 
 a:hover { color: #222; }
@@ -172,6 +172,7 @@ h6 {
 	font-weight: 400;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
+	font-family: "Roboto Condensed",sans-serif;
 }
 
 h5,
@@ -1155,7 +1156,7 @@ body.stretched #header.full-header .container {
 }
 
 #primary-menu ul li:hover > a,
-#primary-menu ul li.current > a { color: #1ABC9C; }
+#primary-menu ul li.current > a {color: #666666;}
 
 #primary-menu > ul > li.sub-menu > a > div { }
 
