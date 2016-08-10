@@ -52,7 +52,8 @@
               <div class="slider-caption slider-caption-center">
                 <h1 class="headline cursive" data-caption-animate="fadeInUp">Crafting Smiles Since 1988</h1>
                 <h2 class="subtitle headline" data-caption-animate="fadeInUp">NOW WELCOMING NEW PATIENTS</h2>
-                <a data-caption-animate="fadeInUp" href="#specials" class="btn btn-danger btn-block btn-lg">New Patient
+                <a data-caption-animate="fadeInUp" href="#specials" data-scrollto="#specials"
+                   class="btn btn-danger btn-block btn-lg">New Patient
                   Offers</a>
               </div>
             </div>
@@ -62,7 +63,8 @@
               <div class="slider-caption slider-caption-center">
                 <h1 class="headline cursive" data-caption-animate="fadeInUp">No Insurance?</h1>
                 <h2 class="subtitle headline" data-caption-animate="fadeInUp">Start Saving Today!</h2>
-                <a data-caption-animate="fadeInUp" href="#section-insurance" class="btn btn-danger btn-block btn-lg">Join Our
+                <a data-caption-animate="fadeInUp" href="#section-insurance" data-scrollto="#section-insurance"
+                   class="btn btn-danger btn-block btn-lg">Join Our
                   Membership
                   Club</a>
               </div>
@@ -81,7 +83,8 @@
                 <h1 class="headline alt serif" data-caption-animate="fadeInUp">“I’ve been to several dentists in my
                   life and  Dr.
                   Maestro is by far the best…” –Melissa B.</h1>
-                <a data-caption-animate="fadeInUp" href="#section-reviews" class="btn btn-danger btn-block btn-lg">Read Our
+                <a data-caption-animate="fadeInUp" href="#section-reviews" data-scrollto="#section-reviews"
+                   class="btn btn-danger btn-block btn-lg">Read Our
                   Reviews</a>
               </div>
             </div>
@@ -860,7 +863,7 @@
               <h3 class="phone-number">(518) 218-0713</h3>
               <h4>Fax:</h4>
               <h3 class="phone-number">(518) 218-0709</h3>
-              <a href="#" class="btn btn-danger btn-block btn-lg">Request Appointment</a>
+              <a href="#" data-target="#modal-form" data-toggle="modal" class="btn btn-danger btn-block btn-lg">Request Appointment</a>
             </div>
           </div>
 
@@ -879,7 +882,7 @@
     <!-- Copyrights
           ============================================= -->
     <div id="copyrights" class="center">
-      Copyright © 2016 All Rights Reserved by <a href="http://www.tysonsteele.com/">Tyson Steele Associates.</a>
+      Copyright ©<span class="copywrite-year">2016</span> All Rights Reserved by <a href="http://www.tysonsteele.com/">Tyson Steele Associates.</a>
       <a href="http://www.facebook.com/Christopher-J-Maestro-DMD-FAGD-181740258511715/" class="fb-link"><i
           class="fa fa-facebook"></i></a>
     </div><!-- #copyrights end -->
@@ -1025,6 +1028,24 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Request Appointment modal	-->
+<div class="modal fade" id="modal-form" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <form id="mail-form" method="post">
+          <label for="name">Name:</label><input type="text" name="name" id="name"/>
+          <label for="name">Phone:</label><input type="text" name="phone" id="phone"/>
+          <button type="submit" href="#" class="btn btn-lrg">Request Appointment</button>
+        </form>
       </div>
     </div>
   </div>

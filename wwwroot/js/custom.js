@@ -41,8 +41,8 @@
       });
     };
 
-    HelloWorldDevs.prototype.smootherScroll = function () {
-      $('a[href*="#"]:not([href="#"])').click(function () {
+    HelloWorldDevs.prototype.smootherScroll = function (exceptions) {
+      $('a[href*="#"]:not([href="#"])').not(exceptions).click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -56,20 +56,38 @@
       });
     };
 
-
     HelloWorldDevs.prototype.mailForm = function (form) {
+      $(form).before('<div class="form-error"></div>');
       $(form).submit(function(e) {
-        console.log(e.target);
         e.preventDefault();
-
+        var formData = $(form).serialize();
+        $.ajax({
+          type: 'POST',
+          // url: 'test.json',
+          url: 'error.php',
+          data: formData,
+          dataType: 'json',
+          encode: true
+        }).done(function (data) {
+          $(form).replaceWith(data.message);
+        }).error(function (e, r, message) {
+          $(form).find('.form-error').text(message);
+        });
       });
+    };
+
+    HelloWorldDevs.prototype.copywriteYear = function (elem) {
+      var year = new Date().getFullYear();
+      $(elem).text(year);
     };
 
     var HWD = new HelloWorldDevs();
     $(document).ready(function () {
       HWD.noOrphans('h1,h2,h3,h4,h5,h6,li,p');
-      HWD.smootherScroll();
+      HWD.smootherScroll('#slider a');
       HWD.accordion('.ui-accordion-header','.ui-accordion-content');
+      HWD.mailForm('#mail-form');
+      HWD.copywriteYear('.copywrite-year');
     });
 
 
