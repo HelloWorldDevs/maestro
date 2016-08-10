@@ -1033,23 +1033,49 @@
   </div>
 </div>
 <!--Request Appointment modal	-->
+<!--Request Appointment modal	-->
 <div class="modal fade" id="modal-form" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
             aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Request an Appointment</h4>
       </div>
       <div class="modal-body">
-        <form id="mail-form" method="post">
-          <label for="name">Name:</label><input type="text" name="name" id="name"/>
-          <label for="name">Phone:</label><input type="text" name="phone" id="phone"/>
-          <button type="submit" href="#" class="btn btn-lrg">Request Appointment</button>
+        <form id="mail-form">
+          <h5>YES! Please contact me to schedule an appointment or answer any questions I might still have:</h5>
+          <div class="row appointment_input_row form-group">
+            <div class="col-xs-4">
+              <label for="name">My name:</label>
+            </div>
+            <div class="col-xs-8">
+              <input type="text" name="name" id="name" class="form-control appointment_form"/>
+            </div>
+          </div>
+          <div class="row appointment_input_row form-group">
+            <div class="col-xs-4">
+              <label for="name">Email:</label>
+            </div>
+            <div class="col-xs-8">
+              <input type="text" name="emal" id="email" class="form-control appointment_form"/>
+            </div>
+          </div>
+          <div class="row appointment_input_row form-group">
+            <div class="col-xs-4">
+              <label for="name">Phone #:</label>
+            </div>
+            <div class="col-xs-8">
+              <input type="text" name="phone" id="phone" class="form-control appointment_form"/>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-danger btn-block btn-lg">Request Appointment</button>
         </form>
       </div>
     </div>
   </div>
 </div>
+
 <!-- Go To Top
 ============================================= -->
 <div id="gotoTop" class="icon-angle-up fa fa-chevron-up"></div>

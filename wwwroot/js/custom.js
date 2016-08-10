@@ -71,7 +71,8 @@
         }).done(function (data) {
           $(form).replaceWith(data.message);
         }).error(function (e, r, message) {
-          $(form).find('.form-error').text(message);
+          message = (message) ? message : r;
+          $('.form-error').text(message);
         });
       });
     };
