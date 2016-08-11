@@ -745,6 +745,10 @@ a.fb-link {
   #section-location__map {
     margin-top: 20px;
   }
+
+  #specials {
+    background-position: center center !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -763,9 +767,6 @@ a.fb-link {
     margin: 10px auto 10px;
   }
 
-  #specials {
-    background-position: center center !important;
-  }
 }
 @media only screen and (max-width: 480px) {
 
