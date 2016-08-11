@@ -28,8 +28,8 @@
       });
     };
 
-    HelloWorldDevs.prototype.noOrphans = function (selectors) {
-      $(selectors).each(function () {
+    HelloWorldDevs.prototype.noOrphans = function (selectors, exceptions) {
+      $(selectors).not(exceptions).each(function () {
         $(this).html($(this).html().replace(/\s([^\s<]{0,10})\s*$/, '&nbsp;$1'));
       });
     };
@@ -82,13 +82,27 @@
       $(elem).text(year);
     };
 
+    HelloWorldDevs.prototype.externalLinks = function (elem) {
+      $(elem).each(function () {
+        var a = new RegExp('/' + window.location.host + '/');
+        if (!a.test(this.href)) {
+          $(this).click(function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            window.open(this.href, '_blank');
+          });
+        }
+      });
+    };
+
     var HWD = new HelloWorldDevs();
     $(document).ready(function () {
-      HWD.noOrphans('h1,h2,h3,h4,h5,h6,li,p');
+      HWD.noOrphans('h1,h2,h3,h4,h5,h6,li,p','.offer-price p');
       HWD.smootherScroll('#slider a');
       HWD.accordion('.ui-accordion-header','.ui-accordion-content');
       HWD.mailForm('#mail-form');
       HWD.copywriteYear('.copywrite-year');
+      HWD.externalLinks('a');
     });
 
 
