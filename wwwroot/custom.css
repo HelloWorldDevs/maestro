@@ -725,20 +725,6 @@ a.fb-link {
   color: white;
 }
 
-@media (max-width: 767px) {
-  .slider-parallax-inner {
-    display: none;
-  }
-  #slider .mobile {
-    display: block;
-  }
-  a.fb-link {
-    position: relative;
-    right: initial;
-    bottom: initial;
-    margin: 10px auto 10px;
-  }
-}
 
 @media (max-width: 991px) {
   .right-border {
@@ -761,7 +747,26 @@ a.fb-link {
   }
 }
 
+@media (max-width: 767px) {
+  .slider-parallax-inner {
+    display: none;
+  }
 
+  #slider .mobile {
+    display: block;
+  }
+
+  a.fb-link {
+    position: relative;
+    right: initial;
+    bottom: initial;
+    margin: 10px auto 10px;
+  }
+
+  #specials {
+    background-position: center center !important;
+  }
+}
 @media only screen and (max-width: 480px) {
 
   .section-team__team-tile {
